@@ -119,6 +119,15 @@ document.addEventListener('keydown',function(e){
         }
     })
 
+  icons[0].addEventListener('click',function(){
+        boom.play();
+        icons[0].style.boxShadow = "0px 0px 10px yellow";
+        icons[0].style.transform = "scale(1.1)";
+        setTimeout(function(){
+        icons[0].style.boxShadow = "0px 5px 20px gray";
+        icons[0].style.transform = "scale(1)";
+        },100);
+    })
   icons[1].addEventListener('click',function(){
         clap.play();
         icons[1].style.boxShadow = "0px 0px 10px yellow";
